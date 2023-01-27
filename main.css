@@ -1,0 +1,109 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #272323;
+    padding-top: 100px;
+}
+
+header {
+    display: flex; /*para por um elemento ao lado do outro*/
+    align-items: center; /*alinhar os elemntos em uma linha horizontal ----- */
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%; /*com o max-width e o width defino que o container vai usar 100% da tela ate 960px, para menter tudo sempre centralizado*/
+    margin: 0 auto; /*para centralizar o conteiner*/
+    background-color: rgb(24, 22, 22);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+form {
+    display: flex; /*esse display flex repetido é para alinhar melhor os itens do formulario lado a lado*/
+    width: 100%;
+    justify-content: space-between; /*para distribuir espacamento entre nos itens*/
+    margin-bottom: 56px;
+}
+
+form input {
+    font-size: 20px;
+    background-color: #ffffff;
+    border: none;
+    border-bottom: #000000; /*para deixar apenas a linha de baixo da borda na cor preta*/
+    padding: 8px;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #009432;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+table {
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+table th {
+    border-bottom: 2px solid #000; /*a tabela ficou com uma linha so na parte de baixo porq usamos o cellspacing="0"no table htmk*/
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+table td {
+    padding: 16px 0; /*Dessa forma adicionei um espacamento entre cada td de 8px apenas em cima e embaixo e nas laterais 0*/
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0,0,0, 0.9);
+}
+
+table td img  {
+    height: 30px;
+}
+
+#total-contatos {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#tel-ddd {
+    max-width: 70px;
+}
+
+#tel-id {
+    max-width: 160px;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #0e0f0f;
+    color: #ecf0f1;
+    padding: 16px 0 ;
+    text-align: center;
+}

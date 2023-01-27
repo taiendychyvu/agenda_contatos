@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container"> <!--container para controlar todo o conteudo do body-->
+        <header>
+            <h1>Lista de Contatos</h1>
+        </header>
+        <form id="form-id" >
+            <input id="nome-id" type="text" required placeholder="Nome" />
+            <input id="sobrenome-id" type="text" required placeholder="Sobrenome" />
+            <input id="tel-ddd" type="number" required placeholder="DDD" maxlength="12"/>
+            <input id="tel-id" type="number" required placeholder="Numero de Telefone" maxlength="12"/>
+            <button type="submit">Adicionar</button>
+        </form>
+        <table cellspacing="0"> <!--cellspacing é para remover a linha entre uma celula e outra que a tabela adiciona automaticmente-->
+            <thead> <!--Thead siginifica que tenho um cabecalho em minha tabela-->
+                <tr> <!--tr para abrir uma linha-->
+                    <th>Nome</th>  <!--th para nomear as colunas do cabecalho da tabela-->
+                    <th>Sobrenome</th>
+                    <th>Contato</th>
+                </tr>
+            </thead>
+            <tbody> <!--tbody para adicionar o conteudo da tabela-->
+                <!-- tr utilizaado apenas para testar e configurar o html, porem utilizaremos o js para inserir os dados -->
+
+            </tbody>
+            <tfoot> <!--Rodape da tabela-->
+                <tr> <!--linha-->
+                    <td></td> <!--Coluna-->
+                    <td></td>
+                    <td id="total-contatos">Total = 0</td><!--dessa forma consigo usar 2 classe no elemento-->
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+<footer>
+    <div class="container.footer">
+        <p> @ Chyvu </p>
+    </div>
+</footer>
+</html>
