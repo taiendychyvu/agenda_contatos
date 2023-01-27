@@ -99,11 +99,22 @@ table td img  {
 #tel-id {
     max-width: 160px;
 }
-
+/*
 footer {
     margin-top: 20px;
     background-color: #0e0f0f;
     color: #ecf0f1;
     padding: 16px 0 ;
+    text-align: center;
+}*/
+
+footer {
+    position: absolute;
+    bottom: 0  ;
+    width: 100%;
+    height: 2.5rem;
+    background-color: #0e0f0f;
+    color: #ecf0f1;
+    padding: 10px 0 ;
     text-align: center;
 }
