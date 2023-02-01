@@ -1,6 +1,11 @@
 const form = document.getElementById('form-id');
 let linhas = ''
 const telSalvo = []; 
+const inputNome = document.getElementById('nome-id');
+const inputSobrenome = document.getElementById(`sobrenome-id`);
+const inputDDD = document.getElementById(`tel-ddd`)
+const inputTel = document.getElementById(`tel-id`);
+//const foneForm = document.querySelector(`.fone-form`)
 
 
 form.addEventListener(`submit`, function(e) {
@@ -12,12 +17,8 @@ form.addEventListener(`submit`, function(e) {
 
 //criando a função que vai ser responsavel por adicionar linhas no html
 function adicionaLinha() {
-    const inputNome = document.getElementById('nome-id');
-    const inputSobrenome = document.getElementById(`sobrenome-id`);
-    const inputDDD = document.getElementById(`tel-ddd`)
-    const inputTel = document.getElementById(`tel-id`);
 
-console.log(inputNome.value + inputSobrenome.value + inputTel.value)
+console.log(inputNome.value + inputSobrenome.value + inputTel.value.length)
 
     if (telSalvo.includes(inputTel.value)){
         alert(`O numero ${inputTel.value} já esta salvo`);
@@ -46,5 +47,13 @@ function atualizaTabela() {
 function calculaContatos() {
     const mostraTotal = document.getElementById(`total-contatos`)
     mostraTotal.innerHTML = `Total = ${telSalvo.length}`
+
+}
+
+function maskPhone () { //Serve para adicionar o - apos os primeiros 5digitos do telefone
+    console.log(inputTel.value.length)
+    if (inputTel.value.length == 5){
+        inputTel.value += `-`
+    } 
 
 }

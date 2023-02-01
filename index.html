@@ -18,8 +18,8 @@
         <form id="form-id" >
             <input id="nome-id" type="text" required placeholder="Nome" />
             <input id="sobrenome-id" type="text" required placeholder="Sobrenome" />
-            <input id="tel-ddd" type="number" required placeholder="DDD" maxlength="12"/>
-            <input id="tel-id" type="number" required placeholder="Numero de Telefone" maxlength="12"/>
+            <input id="tel-ddd" type="tel" required placeholder="DDD" maxlength="2"/>
+            <input id="tel-id" type="tel" required placeholder="Numero de Telefone" maxlength="10" onkeyup="maskPhone()"/>
             <button type="submit">Adicionar</button>
         </form>
         <table cellspacing="0"> <!--cellspacing é para remover a linha entre uma celula e outra que a tabela adiciona automaticmente-->
